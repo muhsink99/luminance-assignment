@@ -55,6 +55,9 @@ body #title h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.profile-container a {
+  text-decoration: none;
+}
 .profile-container #profile-body #carousel-videos {
   display: flex;
   justify-content: center;
