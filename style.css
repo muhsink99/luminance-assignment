@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  background-color: #f2f2f2;
+  font-family: "Crimson Text", serif;
+}
+body #title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+body #title h1 {
+  font: 300% "Marck Script", cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  animation: 1s ease-in 0s 1 fadeIn;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+.profile-container h1 {
+  font: "Work Sans", sans-serif;
+  color: #000000;
+  font-weight: bolder;
+}
+.profile-container h2 {
+  font: "Work Sans", sans-serif;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.profile-container #profile-body #carousel-videos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-container #profile-picture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profile-container #profile-picture-container .profile-picture {
+  border-radius: 100%;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.profile-container #profile-picture-container .profile-signature {
+  width: 250px;
+  size: 20%;
+  margin-top: 10px;
+}
+.profile-container #profile-contents i {
+  color: gray;
+  margin-right: 20px;
+}
+.profile-container #profile-contents label {
+  font: 80% "Crimson Text", serif;
+}
+.profile-container #profile-contents #profile-subheading {
+  margin-bottom: 5px;
+}
+.profile-container #profile-contents #profile-socials {
+  margin-bottom: 25px;
+}
+.profile-container #profile-contents #profile-socials i {
+  font-size: 175%;
+}
+.profile-container #profile-contents #profile-socials i:hover #youtube {
+  color: red;
+  transition: color 0.2s ease-in;
+}
+.profile-container #profile-contents p {
+  margin: 0px;
+  font-family: "Crimson Text", serif;
+  background-color: #e6e6e6;
+}
+.profile-container #profile-contents cite {
+  font-weight: lighter;
+}
+
+/*# sourceMappingURL=style.css.map */

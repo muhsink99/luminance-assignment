@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+$font-header: "Work Sans", sans-serif;
+$font-body: "Crimson Text", serif;
+$font-title: "Marck Script", cursive;
+$primary-color: #000000;
+$icon-color: lighten(#000000, 50%);
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: darken(#ffffff, 5%);
+  font-family: $font-body;
+
+  #title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+
+    h1 {
+      font: 300% $font-title;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  animation: 1s ease-in 0s 1 fadeIn;
+  margin-top: 25px;
+  margin-bottom: 75px;
+
+  h1 {
+    font: $font-header;
+    color: $primary-color;
+    font-weight: bolder;
+  }
+
+  h2 {
+    font: $font-header;
+    color: $primary-color;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  #profile-body {
+    #carousel-videos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  #profile-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .profile-picture {
+      border-radius: 100%;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+
+    .profile-signature {
+      width: 250px;
+      size: 20%;
+      margin-top: 10px;
+    }
+  }
+
+  #profile-contents {
+    i {
+      color: $icon-color;
+      margin-right: 20px;
+    }
+    label {
+      font: 80% $font-body;
+    }
+
+    #profile-subheading {
+      margin-bottom: 5px;
+    }
+
+    #profile-socials {
+      margin-bottom: 25px;
+      i {
+        font-size: 175%;
+      }
+      i:hover #youtube {
+        color: red;
+        transition: color 0.2s ease-in;
+      }
+    }
+
+    p {
+      margin: 0px;
+      font-family: $font-body;
+      background-color: darken(#ffffff, 10%);
+    }
+    cite {
+      font-weight: lighter;
+    }
+  }
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- 
+Luminance assignment 
+Muhsin Kumbay 
+
+Create a ‘profile page’ for a famous person of your choice.  This should be:
+
+- singe page website
+- contain some multimedia elements e.g. images or videos
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CDN -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="title">
+      <h1>Profile of a Famous Person</h1>
+    </div>
+    <div class="container">
+      <div class="profile-container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-12">
+            <!-- Left side of profile -->
+            <div id="profile-picture-container">
+              <div id="profile-picture">
+                <img
+                  src="https://api.time.com/wp-content/uploads/2019/03/david-attenborough-voice-for-our-planet-well-1.jpg?w=800&quality=85"
+                  class="profile-picture"
+                  alt="Profile Picture"
+                />
+              </div>
+              <div id="profile-signature">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/David_Attenborough%27s_signature.svg/1920px-David_Attenborough%27s_signature.svg.png"
+                  class="profile-signature"
+                  alt="Signature"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-9">
+            <!-- Right side of profile -->
+            <div id="profile-contents">
+              <div id="profile-header">
+                <h1>David Attenborough</h1>
+              </div>
+
+              <div id="profile-subheading">
+                <i class="fa fa-birthday-cake">
+                  <label>May 8, 1926 (Age 94)</label>
+                </i>
+                <i class="fa fa-location-arrow">
+                  <label>United Kingdom</label>
+                </i>
+              </div>
+
+              <div id="profile-socials">
+                <!-- Icons go here -->
+                <a
+                  href="https://www.youtube.com/channel/UC3p3WtGCfeVRvt3ytWNHQAg"
+                  target="_blank"
+                  ><i class="fa fa-youtube"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/davidattenborough/"
+                  target="_blank"
+                >
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://attenboroughfilm.com/" target="_blank">
+                  <i class="fa fa-link"></i>
+                </a>
+              </div>
+
+              <div id="profile-body">
+                <h2>Summary</h2>
+                <p>
+                  Attenborough grew up in Leicester, England, where his father
+                  was principal of the local university; his older brother,
+                  Richard Attenborough, later became a successful actor and film
+                  producer. David early developed a strong interest in natural
+                  history. He was educated at Clare College, Cambridge (M.A.,
+                  1947), and began work at an educational publishing house in
+                  1949. In 1952 he completed a training program at the British
+                  Broadcasting Corporation (BBC) and became a television
+                  producer for the BBC. Together with the reptile curator Jack
+                  Lester, in 1954 he originated the television series Zoo Quest,
+                  in which live animals were filmed in the wild and in zoos.
+                  This show proved enormously popular and widened the scope of
+                  the educational programming offered by the BBC.
+                </p>
+                <cite
+                  >Taken from <strong>britannica.com</strong>, Dec 17 2020</cite
+                >
+                <h2>Notable works</h2>
+                <!-- Carousel -->
+                <div id="carousel-videos" class="carousel slide">
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#carousel-videos"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li data-target="#carousel-videos" data-slide-to="1"></li>
+                    <li data-target="#carousel-videos" data-slide-to="2"></li>
+                  </ol>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carousel-videos"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carousel-videos"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <cite
+                        >David Attenborough: A Life on Our Planet | Official
+                        Trailer | Netflix
+                      </cite>
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/64R2MYUt394"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <cite
+                        >David Attenborough's JAW DROPPING new trailer A Perfect
+                        Planet - BBC</cite
+                      >
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/xxibm1ODEpI"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <cite
+                        >Planet Earth II: Official Extended Trailer | BBC Earth
+                      </cite>
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe
+                          width="560"
+                          height="315"
+                          src="https://www.youtube.com/embed/c8aFcHFu8QM"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End carousel -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
